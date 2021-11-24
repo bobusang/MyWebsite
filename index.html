@@ -4,20 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./js/owl.carousel/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./js/owl.carousel/dist/assets/owl.theme.default.min.css"/>
+    
     <title>Hamzah Ramadhan | Front-End Developer</title>
 </head>
 <body>
-    <div class="hero-section">
-        <div class="">
-            <h1 class="heading-title">Oh? Hi!</h1>
-            <h2 class="heading-sub">This is me</h2>
-            <h2 class="heading-name">Hamzah</h3>
+    <div class="grid md:grid-cols-2 hero-section">
+        <div class="grid-left">
+            <div class="hero-text">
+                <h1 class="heading-title">Oh? Hi!</h1>
+                <h2 class="heading-sub">My Name is</h2>
+                <h3 class="heading-name">Hamzah</h3>
+                <h4 class="heading-sub hidden md:block ">UI Designer / Graphic Desigenr / Front-End Developer</h4>
+            </div>
         </div>
-     <div class="container-image">
-         <img src="./assets/img/person_img.png" alt="Person Image">
+     <div class="grid-right">
          <div class="ellips"></div>
+         <img class="mx-auto hidden md:block cloud" src="./assets/img/cloud.png" alt="cloud">
+         <img class="person" src="./assets/img/person_img.png" alt="Person Image">
      </div>
     </div>
+
+    <div class="about-section ">
+        <div class="grid md:grid-cols-2">
+            <div class="about-content-left">
+                <h2>Born in 1996 <br/> And Ready to <strong>Roll!</strong></h2>
+                <p>
+                    I am a <strong> Designer, Graphic Designer,</strong> and Little bit of <strong> Front-end Developer</strong>. My passion is to build something usefull for everyone! I love working with teams thus still strong in a solo player.  I have been working in Jakarta and Singapore and currently looking for any opportunity overseas!
+                </p>
+            </div>
+            <div class="about-content-right">
+                <img src="./assets/img/person_skate.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="carousel-section">
+        <h1> Yo! Checkout  <strong>My Projects</strong></h1>
+        <img class="pointing-hand" src="./assets/img/ponitng-hand.png" alt="ponitng-hand">
+        
+        <div class="owl-carousel">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                            <img src="./assets/img/UI_design.png" alt="ui design thumbnail">
+                        </div>
+                        <h3>UI Designs</h3>     
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                            <img src="./assets/img/graphic_design.png" alt="graphic design thumbnail">
+                        </div>
+                        <h3>Graphic Design</h3>     
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                            <img src="./assets/img/website.png" alt="website thumbnail">
+                        </div>
+                        <h3>Website</h3>     
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="collab-section">
+        <img class="floating" src="./assets/img/hands_clap.png" alt="clapping hands" >
+        <p>Wait... Did I mentioned about <br/> <span>Collaboration?</span></p>
+        <p>No no no! I'm not Joking!</p>
+        <button>Let's <span> talk about that!</span> </button>
+    </div>
+
+    <div class="footer-section">
+        <h2>Hey, You have come to this far? <br/> Why don't we <span>Get In Touch?</span></h2>
+        <div class="social-media">
+            <img class="icon" src="./assets/img/icon-behance.png" alt="behance account">
+            <img class="icon" src="./assets/img/icon-dribbble.png" alt="behance account">
+            <img class="icon" src="./assets/img/icon-instagram.png" alt="behance account">
+            <img class="icon" src="./assets/img/icon-linkedin.png" alt="behance account">
+        </div>
+    </div>
 </body>
+
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
 </html>
