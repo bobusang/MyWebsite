@@ -8,6 +8,7 @@ $(document).ready(function(){
             0: {
                 items: 1,
                 margin: -80,
+                nav: true,
             },
             768: {
                 items: 3,
