@@ -189,7 +189,8 @@ body {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(61.195px);
+    backdrop-filter:blur(61.195px);
+    -webkit-backdrop-filter: blur(61.195px);
     padding-bottom: 20px;
 }
 
@@ -207,7 +208,7 @@ body {
 .card-content img {
     height: auto;
     max-height: 300px;
-    max-width: 100%;
+    width: auto !important;
     margin: -100px auto 0px auto;
 }
 
