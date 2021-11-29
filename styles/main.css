@@ -102,6 +102,7 @@ body {
 /* about me section */
 .about-section {
     padding: 40px 0px;
+    position: relative;
 }
 
 .about-content-left {
@@ -120,16 +121,29 @@ body {
     text-align: center;
 }
 
-.about-content-right {
-    position: relative;
-    background-image: url('../assets/img/about_elements.png');
-    background-position: top center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.about-content-right img{
     padding-top: 40px;
+    margin: 0px auto;
+}
+
+.element {
+    max-height: 100%;
+    max-width: 160px;
+    position: absolute;
+}
+
+.cone {
+    left: 10px;
+    bottom: 70px;
+    transform: translateY(30px);
+    animation: float 5s ease-in-out infinite;
+}
+
+.headset {
+    right: 20px;
+    bottom: 150px;
     transform: translateY(0px);
-    animation: float 6s ease-in-out infinite;
-    
+    animation: float 4s ease-in-out infinite;
 }
 
 
@@ -300,37 +314,58 @@ body {
 
 
 @media only screen and (min-width: 768px) {
-
+    * {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .hero-section {
         padding: 0px 40px 0px 40px;
+        max-width: 1200px;
+        max-height: 600px;
+        margin: 20px auto 0px auto;
+        border-radius: 40px;
+    }
+
+    .grid-left {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        z-index: 50;
     }
 
     .hero-section h1 {
-        text-align: center;
-        font-size: 180px;
-        font-weight: 800;
+        text-align: left;
+        font-size: 2vw;
+        font-weight: 600;
         line-height: normal;
     }
     
     .hero-section h2 {
-        text-align: center;
-        font-size: 48px;
+        text-align: left;
+        font-size: 2vw;
         font-weight: 400;
         line-height: 1px;
         line-height: normal;
     }
     
     .hero-section h3 {
-        text-align: center;
-        font-size: 68px;
+        text-align: left;
+        font-size: 4vw;
         font-weight: 700;
+        line-height: normal;
+    }
+    
+    .hero-section h4 {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 400;
         line-height: normal;
     }
 
 
     .person {
         position: absolute;
-        bottom: 0;
+        bottom: -60px;
         margin-bottom: -30px;
         height: auto;
         width: auto;
@@ -350,16 +385,106 @@ body {
         width: 800px;
         background-color: #FFD700;
         border-radius: 100%;
-        z-index: 5;
+    }
+
+    .about-section {
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .about-content-left {
+        max-width: 800px;
+    }
+
+    .element {
+        max-height: 100%;
+        max-width: 300px;
+        position: absolute;
     }
     
-
-    .hero-text {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin: 0;
+    .cone {
+        left: 10px;
+        bottom: 10px;
+        transform: translateY(30px);
+        animation: float 5s ease-in-out infinite;
     }
 
+    .headset {
+        right: 20px;
+        bottom: 150px;
+        transform: translateY(0px);
+        animation: float 4s ease-in-out infinite;
+    }
 
+    .carousel-section {
+        background-image:url('../assets/img/element_molecule.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .carousel-section h1 {
+        font-size: 3vw;
+        color: #448AFA;
+    }
+
+    /* footer section */
+    .footer-section {
+        max-width: 1200px;
+        background-image: url('../assets/img/footer-image.png');
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: bottom -10px right 30px;
+        padding: 0px 18px ;
+    }
+
+    .footer-section h2 {
+        color: #B63C70;
+        font-size: 3vw;
+    }
+
+    .footer-section h2 span {
+        font-weight: bold;
+    }
+
+    .social-media {
+        position: relative;
+        height: 260px;
+        margin-top: 24px;
+    }
+
+    .social-media img {
+        max-height: 100px;
+        width: auto;
+        position: absolute;
+    }
+
+    .social-media img:nth-child(1) {
+        top:0;
+        left: 20px;
+        transform: translateY(0px);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .social-media img:nth-child(2) {
+        top:0;
+        left: 440px;
+        transform: translateY(0px);
+        animation: float 3.5s ease-in-out infinite;
+    }
+
+    .social-media img:nth-child(3) {
+        top:160px;
+        left:120px;
+        transform: translateY(0px);
+        animation: float 5s ease-in-out infinite;
+    }
+
+    .social-media img:nth-child(4) {
+        top:80px;
+        left:260px;
+        transform: translateY(0px);
+        animation: float 4s ease-in-out infinite;
+    }
 }

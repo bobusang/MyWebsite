@@ -9,11 +9,13 @@ $(document).ready(function(){
                 items: 1,
                 margin: -60,
             },
-            600: {
-                items: 3
+            768: {
+                items: 3,
+                
             },
             1000: {
-                items:5
+                items:3,
+                margin: 60,
             }
         }
     });
