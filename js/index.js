@@ -7,7 +7,7 @@ $(document).ready(function(){
         responsive: {
             0: {
                 items: 1,
-                margin: -60,
+                margin: -80,
             },
             768: {
                 items: 3,

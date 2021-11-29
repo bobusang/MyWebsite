@@ -221,12 +221,14 @@ body {
     text-align: center;
     gap: 20px 0px;
     color: white;
-    margin: 200px 0px 80px 0px;
+    margin: 300px 0px 80px 0px;
     padding-bottom: 24px;
 }
 
 .collab-section img {
     margin-top: -200px;
+    height: 280px;
+    max-width: 100%;
     
 }
 
