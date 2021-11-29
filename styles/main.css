@@ -285,6 +285,15 @@ body {
     position: absolute;
 }
 
+.social-media .icon {
+    transition: all .2s ease-in-out;
+}
+
+.social-media .icon:hover {
+    transform: scale(1.5);
+
+}
+
 .social-media img:nth-child(1) {
     top:0;
     left: 20px;
